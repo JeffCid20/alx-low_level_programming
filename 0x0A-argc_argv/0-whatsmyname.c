@@ -1,11 +1,18 @@
 #include <stdio.h>
 
 /**
-* main - The starting point of the program receiving arguements of argc and argv
+* main - Prints the name of the program
 *
+* @argc: argument count
+*
+* @argv: argument vector
 * Return: 0
 */
 
-int main(argc, *argv[])
+int main(int argc, char **argv)
 {
+	(void)argc;
+
+	printf("%s\n", argv[0]);
+	return (0);
 }
